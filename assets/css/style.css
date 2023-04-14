@@ -761,6 +761,9 @@ h2 {
     margin-bottom: 10px;
 }
 
+.kein-produkte {
+    padding: 20px 0 100px 0;
+}
 @media screen and (max-width: 1281px) {
     .h-cards .h-cards__item {
         padding: 35px 0 30px 0;
