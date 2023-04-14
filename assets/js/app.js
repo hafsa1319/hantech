@@ -58,51 +58,37 @@ document.querySelector('footer').innerHTML = `
                 <div class="footer__item">
                     <h3>AC</h3>
                     <ul>
-                        <li><a href="#">ac</a></li>
-                        <li><a href="#">ac</a></li>
-                        <li><a href="#">ac</a></li>
-                        <li><a href="#">ac</a></li>
+                        
                     </ul>
                 </div>
                 <div class="footer__item">
-                    <h3>AC</h3>
+                    <h3></h3>
                     <ul>
-                        <li><a href="#">ac</a></li>
-                        <li><a href="#">ac</a></li>
-                        <li><a href="#">ac</a></li>
-                        <li><a href="#">ac</a></li>
+                       
                     </ul>
                 </div>
                 <div class="footer__item">
-                    <h3>AC</h3>
+                    <h3></h3>
                     <ul>
-                        <li><a href="#">ac</a></li>
-                        <li><a href="#">ac</a></li>
-                        <li><a href="#">ac</a></li>
-                        <li><a href="#">ac</a></li>
+                       
                     </ul>
                 </div>
                 <div class="footer__item">
-                    <h3>AC</h3>
+                    <h3></h3>
                     <ul>
-                        <li><a href="#">ac</a></li>
-                        <li><a href="#">ac</a></li>
-                        <li><a href="#">ac</a></li>
-                        <li><a href="#">ac</a></li>
+                       
                     </ul>
                 </div>
             </div>
         </div>
         <div class="h-container">
             <div class="footer-other">
-                <div class="footer-logo"><a href="#"><img src="assets/img/hantech-logo-footer.png" alt=""></a></div>
+                <div class="footer-logo"><a href="./"><img src="assets/img/hantech-logo-footer.png" alt=""></a></div>
                 <div class="footer-copyright">© 2021 HENTECH</div>
                 <div class="footer-menu">
                     <ul>
-                        <li><a href="#">Imorint</a></li>
-                        <li><a href="#">Imorint</a></li>
-                        <li><a href="#">Imorint</a></li>
-                        <li><a href="#">Imorint</a></li>
+                        <li><a href="./about.html">About HANTECH</a></li>
+                       
                     </ul>
                 </div>
                 <div class="h-social">
