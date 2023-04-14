@@ -8,12 +8,12 @@ document.querySelector('header').innerHTML = `
         <div class="header-bottom">
             <div class="h-logo">
                 <a href="./index.html">
-                    <img src="assets/img/hantech-logo.png" alt="">
+                    <img src="./assets/img/hantech-logo.png" alt="">
                 </a>
             </div>
             <nav>
                 <ul class="header-menu">
-                    <li><a href="./about.html">about</a></li>
+                    <li><a href="./about.html">ABOUT HANTECH</a></li>
                     <li>
                         <a href="#">Alle Produkte <img src="assets/img/menu-arrow.svg" alt=""></a>
                         <ul class="header-menu__dropdown">
@@ -32,6 +32,97 @@ document.querySelector('header').innerHTML = `
         </div>
     </div>
 `;
+document.querySelector('footer').innerHTML = `
+  <div class="footer-top">
+        <img src="assets/img/footer-top.svg" alt="">
+    </div>
+    <div class="footer-bottom">
+        <div class="h-container">
+            <div class="footer__links">
+                <div class="footer__item">
+                    <h3>Menu</h3>
+                  <ul>
+                    <li><a href="./about.html">about</a></li>
+                    <li><a href="#">Alle Produkte <img src="./assets/img/menu-arrow.svg" alt=""></a>
+                    </li>
+                </ul>
+                </div>
+                <div class="footer__item">
+                    <h3>Produkte</h3>
+                    <ul >
+                            <li><a href="./products.html?name=Wandklimageräte">Wandklimageräte</a></li>
+                            <li><a href="./products.html?name=Deckenkassetten">Deckenkassetten</a></li>
+                            <li><a href="./products.html?name=Truhengeräte">Truhengeräte / Konsolgeräte</a></li>
+                        </ul>
+                </div>
+                <div class="footer__item">
+                    <h3>AC</h3>
+                    <ul>
+                        <li><a href="#">ac</a></li>
+                        <li><a href="#">ac</a></li>
+                        <li><a href="#">ac</a></li>
+                        <li><a href="#">ac</a></li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <h3>AC</h3>
+                    <ul>
+                        <li><a href="#">ac</a></li>
+                        <li><a href="#">ac</a></li>
+                        <li><a href="#">ac</a></li>
+                        <li><a href="#">ac</a></li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <h3>AC</h3>
+                    <ul>
+                        <li><a href="#">ac</a></li>
+                        <li><a href="#">ac</a></li>
+                        <li><a href="#">ac</a></li>
+                        <li><a href="#">ac</a></li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <h3>AC</h3>
+                    <ul>
+                        <li><a href="#">ac</a></li>
+                        <li><a href="#">ac</a></li>
+                        <li><a href="#">ac</a></li>
+                        <li><a href="#">ac</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="h-container">
+            <div class="footer-other">
+                <div class="footer-logo"><a href="#"><img src="assets/img/hantech-logo-footer.png" alt=""></a></div>
+                <div class="footer-copyright">© 2021 HENTECH</div>
+                <div class="footer-menu">
+                    <ul>
+                        <li><a href="#">Imorint</a></li>
+                        <li><a href="#">Imorint</a></li>
+                        <li><a href="#">Imorint</a></li>
+                        <li><a href="#">Imorint</a></li>
+                    </ul>
+                </div>
+                <div class="h-social">
+                    <div class="h-social__item">
+                        <a href="#"><img src="assets/img/facebook.svg" alt=""></a>
+                    </div>
+                    <div class="h-social__item">
+                        <a href="#"><img src="assets/img/twitter.svg" alt=""></a>
+                    </div>
+                    <div class="h-social__item">
+                        <a href="#"><img src="assets/img/instagram.svg" alt=""></a>
+                    </div>
+                    <div class="h-social__item">
+                        <a href="#"><img src="assets/img/link.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+`
 document.querySelector('.mobil-menu').addEventListener('click', function () {
 
     this.classList.toggle('active');
