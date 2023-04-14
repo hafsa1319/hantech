@@ -717,6 +717,22 @@ h2 {
 .h-dropdown-content.show {
     display: block;
 }
+.product-detail h2 {
+    font-size: 32px;
+    text-align: left;
+    padding: 0;
+    margin: 20px 0;
+}
+.product-detail table {
+    border-spacing: 10px 20px;
+}
+.product-detail table th {
+    font-weight: 700;
+}
+.product-detail table tbody tr {
+    border-bottom: 20px solid transparent;
+}
+
 /* Dropdown List End*/
 
 /* Breadcrumb Start */
@@ -763,6 +779,20 @@ h2 {
 
 .kein-produkte {
     padding: 20px 0 100px 0;
+}
+.h-default-page {
+    padding-bottom: 150px;
+}
+.h-default-page h5{
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+.h-default-page p {
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1.7;
 }
 @media screen and (max-width: 1281px) {
     .h-cards .h-cards__item {

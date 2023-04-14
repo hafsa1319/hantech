@@ -1,33 +1,43 @@
-const sliderImage = document.querySelector('.slider-image img');
-const thumbnails = document.querySelectorAll('.thumbnail');
-const dropdownList = document.querySelectorAll('.h-dropdown-title');
+
+document.querySelector('header').innerHTML = `
+<div class="h-container"><div class="header-top">
+        <a href="#" class="h-button h-button__primary">find a partner</a>
+        <a href="#" class="h-button h-button__secondary">showroom</a>
+    </div></div>
+    <div class="h-container">
+        <div class="header-bottom">
+            <div class="h-logo">
+                <a href="./index.html">
+                    <img src="assets/img/hantech-logo.png" alt="">
+                </a>
+            </div>
+            <nav>
+                <ul class="header-menu">
+                    <li><a href="./about.html">about</a></li>
+                    <li>
+                        <a href="#">Alle Produkte <img src="assets/img/menu-arrow.svg" alt=""></a>
+                        <ul class="header-menu__dropdown">
+                            <li><a href="./products.html?name=Wandklimageräte">Wandklimageräte</a></li>
+                            <li><a href="./products.html?name=Deckenkassetten">Deckenkassetten</a></li>
+                            <li><a href="./products.html?name=Truhengeräte">Truhengeräte / Konsolgeräte</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mobil-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+`;
 document.querySelector('.mobil-menu').addEventListener('click', function () {
 
     this.classList.toggle('active');
     document.querySelector('.header-bottom nav').classList.toggle('active');
 });
 
-
-
-if(sliderImage) {
-    thumbnails.forEach(thumbnail => {
-        thumbnail.addEventListener('click', () => {
-            const thumbnailImage = thumbnail.querySelector('img');
-            sliderImage.src = thumbnailImage.src;
-        });
-    });
-}
-
-
-dropdownList.forEach(function(dropdown) {
-    dropdown.addEventListener('click', function() {
-        this.classList.toggle('active');
-        this.nextElementSibling.classList.toggle('show');
-    });
-});
-
-
-//
 
 const menu1 = [
     {
@@ -249,6 +259,15 @@ if(document.querySelector('.product-detail')) {
                 sliderFirstImage.innerHTML += `<img src="${image}" alt="Image 1">`
             }
             sliderThumbnails.innerHTML += `<div class="thumbnail"><img src="${image}" alt="Image 1"></div>`
+        });
+
+        item.tabs.map((tab,index) => {
+            dropdownList.innerHTML += `<div class="h-dropdown">
+                    <span class="h-dropdown-title">${tab.name}</span>
+                    <div class="h-dropdown-content">
+                        ${tab.content}
+                    </div>
+                </div>`
         })
 
         title.textContent = item.title;
@@ -256,7 +275,49 @@ if(document.querySelector('.product-detail')) {
         desc.innerHTML = item.desc;
 
 
+
+
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    const sliderImage = document.querySelector('.slider-image img');
+    const thumbnails = document.querySelectorAll('.thumbnail');
+    if(sliderImage) {
+        thumbnails.forEach(thumbnail => {
+            thumbnail.addEventListener('click', () => {
+                const thumbnailImage = thumbnail.querySelector('img');
+                sliderImage.src = thumbnailImage.src;
+            });
+        });
+    };
+
+
+    const dropdownList = document.querySelectorAll('.h-dropdown-title');
+    dropdownList.forEach(function(dropdown) {
+        dropdown.addEventListener('click', function() {
+            this.classList.toggle('active');
+            this.nextElementSibling.classList.toggle('show');
+        });
     });
 
 
 }
+
+
+
+
+
