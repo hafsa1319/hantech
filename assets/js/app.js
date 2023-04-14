@@ -39,7 +39,6 @@ var requestOptions = {
     method: 'GET',
     headers: myHeaders,
     redirect: 'follow',
-    mode: 'no-cors'
 };
 
 fetch("https://www.actec-klima.de/rest/categories", requestOptions)
